@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-
+mongoose.connect('mongodb+srv://vicky:test123@cluster0.epdrsry.mongodb.net/add_user?retryWrites=true&w=majority')
 
 //creteuser
 app.post('/CreateUser', (req, res) => {
